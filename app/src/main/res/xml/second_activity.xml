@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mlbcup"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/tv_display2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team won by:"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="0dp"
+            android:text="Call"
+            android:onClick="makeCall"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@id/button"
+            android:layout_toLeftOf="@id/button3"
+            android:text="Send text"
+            android:onClick="sendMessage"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="51dp"
+            android:text="Locations"
+            android:onClick="findLocations"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>
